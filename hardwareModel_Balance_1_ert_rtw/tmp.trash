@@ -1,0 +1,103 @@
+Set binary mode
+readWord(addr=0)=0x20007ffc
+readWord(addr=0xe000ed00)=0x410cc601
+readWord(addr=0x41002018)=0x10010305
+version()=v2.0 [Arduino:XYZ] Apr 19 2019 14:38:48
+chipId=0x10010005
+Connected at 921600 baud
+readWord(addr=0)=0x20007ffc
+readWord(addr=0xe000ed00)=0x410cc601
+readWord(addr=0x41002018)=0x10010305
+Atmel SMART device 0x10010005 found
+write(addr=0x20004000,size=0x34)
+writeWord(addr=0x20004030,value=0x10)
+writeWord(addr=0x20004020,value=0x20008000)
+Device       : ATSAMD21G18A
+readWord(addr=0)=0x20007ffc
+readWord(addr=0xe000ed00)=0x410cc601
+readWord(addr=0x41002018)=0x10010305
+Chip ID      : 10010005
+version()=v2.0 [Arduino:XYZ] Apr 19 2019 14:38:48
+Version      : v2.0 [Arduino:XYZ] Apr 19 2019 14:38:48
+Address      : 8192
+Pages        : 3968
+Page Size    : 64 bytes
+Total Size   : 248KB
+Planes       : 1
+Lock Regions : 16
+Locked       : readWord(addr=0x41004020)=0xffff
+readWord(addr=0x41004020)=0xffff
+readWord(addr=0x41004020)=0xffff
+readWord(addr=0x41004020)=0xffff
+readWord(addr=0x41004020)=0xffff
+readWord(addr=0x41004020)=0xffff
+readWord(addr=0x41004020)=0xffff
+readWord(addr=0x41004020)=0xffff
+readWord(addr=0x41004020)=0xffff
+readWord(addr=0x41004020)=0xffff
+readWord(addr=0x41004020)=0xffff
+readWord(addr=0x41004020)=0xffff
+readWord(addr=0x41004020)=0xffff
+readWord(addr=0x41004020)=0xffff
+readWord(addr=0x41004020)=0xffff
+readWord(addr=0x41004020)=0xffff
+none
+readWord(addr=0x41004018)=0
+Security     : false
+Boot Flash   : true
+readWord(addr=0x40000834)=0x7000a
+BOD          : true
+readWord(addr=0x40000834)=0x7000a
+BOR          : true
+Arduino      : FAST_CHIP_ERASE
+Arduino      : FAST_MULTI_PAGE_WRITE
+Arduino      : CAN_CHECKSUM_MEMORY_BUFFER
+Erase flash
+chipErase(addr=0x2000)
+done in 0.873 seconds
+
+Write 42040 bytes to flash (657 pages)
+write(addr=0x20005000,size=0x1000)
+writeBuffer(scr_addr=0x20005000, dst_addr=0x2000, size=0x1000)
+[==                            ] 9% (64/657 pages)write(addr=0x20005000,size=0x1000)
+writeBuffer(scr_addr=0x20005000, dst_addr=0x3000, size=0x1000)
+[=====                         ] 19% (128/657 pages)write(addr=0x20005000,size=0x1000)
+writeBuffer(scr_addr=0x20005000, dst_addr=0x4000, size=0x1000)
+[========                      ] 29% (192/657 pages)write(addr=0x20005000,size=0x1000)
+writeBuffer(scr_addr=0x20005000, dst_addr=0x5000, size=0x1000)
+[===========                   ] 38% (256/657 pages)write(addr=0x20005000,size=0x1000)
+writeBuffer(scr_addr=0x20005000, dst_addr=0x6000, size=0x1000)
+[==============                ] 48% (320/657 pages)write(addr=0x20005000,size=0x1000)
+writeBuffer(scr_addr=0x20005000, dst_addr=0x7000, size=0x1000)
+[=================             ] 58% (384/657 pages)write(addr=0x20005000,size=0x1000)
+writeBuffer(scr_addr=0x20005000, dst_addr=0x8000, size=0x1000)
+[====================          ] 68% (448/657 pages)write(addr=0x20005000,size=0x1000)
+writeBuffer(scr_addr=0x20005000, dst_addr=0x9000, size=0x1000)
+[=======================       ] 77% (512/657 pages)write(addr=0x20005000,size=0x1000)
+writeBuffer(scr_addr=0x20005000, dst_addr=0xa000, size=0x1000)
+[==========================    ] 87% (576/657 pages)write(addr=0x20005000,size=0x1000)
+writeBuffer(scr_addr=0x20005000, dst_addr=0xb000, size=0x1000)
+[============================= ] 97% (640/657 pages)write(addr=0x20005000,size=0x440)
+writeBuffer(scr_addr=0x20005000, dst_addr=0xc000, size=0x440)
+[==============================] 100% (657/657 pages)
+done in 0.318 seconds
+
+Verify 42040 bytes of flash with checksum.
+checksumBuffer(start_addr=0x2000, size=0x1000) = a327
+checksumBuffer(start_addr=0x3000, size=0x1000) = 4112
+checksumBuffer(start_addr=0x4000, size=0x1000) = f917
+checksumBuffer(start_addr=0x5000, size=0x1000) = 7359
+checksumBuffer(start_addr=0x6000, size=0x1000) = 5ea5
+checksumBuffer(start_addr=0x7000, size=0x1000) = 30d8
+checksumBuffer(start_addr=0x8000, size=0x1000) = 33e5
+checksumBuffer(start_addr=0x9000, size=0x1000) = 2418
+checksumBuffer(start_addr=0xa000, size=0x1000) = 5c94
+checksumBuffer(start_addr=0xb000, size=0x1000) = 71f5
+checksumBuffer(start_addr=0xc000, size=0x438) = e1ca
+Verify successful
+done in 0.039 seconds
+CPU reset.
+readWord(addr=0)=0x20007ffc
+readWord(addr=0xe000ed00)=0x410cc601
+readWord(addr=0x41002018)=0x10010305
+writeWord(addr=0xe000ed0c,value=0x5fa0004)
